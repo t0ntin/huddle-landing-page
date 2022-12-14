@@ -13,11 +13,14 @@
 
 html {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  /* font-size: 18px; */
+}
+
+header {
+  background-color: var(--VERY-PALE-CYAN);
+  background-image: url(./images/bg-hero-desktop.svg);
 }
 
 section.main {
-  background-image: url(./images/bg-hero-mobile.svg);
   padding: 0px 1.5rem;
   margin-bottom: 6rem;
 }
@@ -27,7 +30,6 @@ section.main {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 1rem;
-  background-image: url(./images/bg-hero-mobile.svg);
 }
 
 .header-top img {
@@ -38,8 +40,8 @@ section.main {
 button.try {
   border: 0;
   font-family: inherit;
-  font-size: .6rem;
-  padding: .3rem 1.4rem;
+  font-size: .7rem;
+  padding: .4rem 1.5rem;
   border-radius: 20px;
   background-color: white;
   box-shadow: 1px 2px 7px 0px rgb(201, 201, 201);
@@ -178,23 +180,28 @@ i:hover {
 
 @media only screen and (min-width: 450px) {
 
-  body {
-    /* display: flex;
+  main {
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
   }
 
-  section.main, .header-top {
+  header {
+    margin-bottom: 5rem;
+    max-width: 70vw;
     background-image: url(./images/bg-hero-desktop.svg);
-    max-width: 1000px;
-    margin: auto;
+    padding: 2rem 3rem 0rem 3rem;
+  }
+
+  .header-top img {
+    width: 150px;
+    height: 24px;
   }
 
   .main {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    margin-top: 30rem;
   }
 
   .hero-info {
@@ -202,7 +209,7 @@ i:hover {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    max-width: 1000px;
+    max-width: 70vw;
   }
 
   .main img {
@@ -212,12 +219,12 @@ i:hover {
 
   .card1, .card2, .card3 {
     flex-direction: row;
-    box-shadow: none;
+    box-shadow: 1px 1px 6px 0px rgba(176,176,176,1);
     text-align: left;
     align-items: center;
-    gap: 10rem;
-    max-width: 1000px;
-    margin: auto;
+    gap: 7rem;
+    max-width: 70vw;
+    padding: 2rem 2rem 2rem 6rem;
   }  
 
   .card1, .card3 {
@@ -228,6 +235,11 @@ i:hover {
     margin: 0;
   }
 
+  .card1 img, .card2 img, .card3 img {
+    width: 350px;
+    height: 264px;
+  }
+  
   .ready {
   margin: 0rem 20%;
   }
