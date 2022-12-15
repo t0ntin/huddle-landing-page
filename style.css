@@ -18,6 +18,7 @@ html {
 /* code suggested at frontendmentor.io; Also removed the image size below and in the html */
 img {
   display: block;
+  max-width: 100%;
 }
 
 header {
